@@ -1,0 +1,19 @@
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\bin\Debug\MMORTS - Greed War Game Client.exe
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\bin\Debug\MMORTS - Greed War Game Client.pdb
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formLogin.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.Properties.Resources.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS - Greed War Game Client.exe
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS - Greed War Game Client.pdb
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formMain.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formAccount.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formBuildings.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formResearch.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formShipyard.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formDefense.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formFleet.resources
+C:\Users\Ascensao\Desktop\Projectos Visual Studio\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS___Greed_War_Game_Client.formMsg.resources
+C:\Users\Bernardo\Desktop\git\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS - Greed War Game Client.exe
+C:\Users\Bernardo\Desktop\git\MMORTS - Greed War Game Client\MMORTS - Greed War Game Client\obj\x86\Debug\MMORTS - Greed War Game Client.pdb

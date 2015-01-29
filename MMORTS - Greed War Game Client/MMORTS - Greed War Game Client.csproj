@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BFEB7D38-D18D-4BBA-8C17-BD28607AB8E2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MMORTS___Greed_War_Game_Client</RootNamespace>
+    <AssemblyName>MMORTS - Greed War Game Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>gwg.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.3.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="encryption.cs" />
+    <Compile Include="errorMSG.cs" />
+    <Compile Include="formDefense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formDefense.Designer.cs">
+      <DependentUpon>formDefense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formFleet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formFleet.Designer.cs">
+      <DependentUpon>formFleet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMsg.Designer.cs">
+      <DependentUpon>formMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formShipyard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formShipyard.Designer.cs">
+      <DependentUpon>formShipyard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formAccount.Designer.cs">
+      <DependentUpon>formAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formBuildings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formBuildings.Designer.cs">
+      <DependentUpon>formBuildings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formLogin.Designer.cs">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formMain.Designer.cs">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formResearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formResearch.Designer.cs">
+      <DependentUpon>formResearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mysqlCon.cs" />
+    <Compile Include="mysqlInsertOrUpdate.cs" />
+    <Compile Include="mysqlQuery.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="readFileManage.cs" />
+    <Compile Include="samfile.cs" />
+    <Compile Include="writeFileManage.cs" />
+    <EmbeddedResource Include="formAccount.resx">
+      <DependentUpon>formAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formBuildings.resx">
+      <DependentUpon>formBuildings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formDefense.resx">
+      <DependentUpon>formDefense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formFleet.resx">
+      <DependentUpon>formFleet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formLogin.resx">
+      <DependentUpon>formLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMain.resx">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formMsg.resx">
+      <DependentUpon>formMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formResearch.resx">
+      <DependentUpon>formResearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formShipyard.resx">
+      <DependentUpon>formShipyard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bgLogin.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gwgLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citizens.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coins.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deuterium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\energy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sapphire-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\titanium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uranium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crystal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\improve.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\improve1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\improve2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\improve3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoLogin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainPlanet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\miniMainPlanet.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nanoground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\metalGrid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accountGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgBank.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgCrystal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgDeuterium.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgIron.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLab.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgMarket.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgMetro.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgNanite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgNuclear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPower.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgShip.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgStone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgTitanium.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgUranium.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgWater.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgFarm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgFood.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgOil.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imagWeapon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgAccelaration.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgArmour.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgCombustion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgComputer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgenergy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgEspionage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgExpedition.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgGravity.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgLaser.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgPlasma.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgShield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipArmageddon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipBomber.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipCargo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipColony.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipDestroyer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipEspionage.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipFighter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipHunter.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipRecycler.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipSatellite.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shipSlayer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defAccelaration.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defAnti.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defEnergy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defGravity.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defJericho.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defLaser.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defNuclear.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defPlasma.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="gwg.ico" />
+    <None Include="Resources\transport.png" />
+    <None Include="Resources\espionage.png" />
+    <None Include="Resources\atacar.png" />
+    <None Include="Resources\expedition.png" />
+    <None Include="Resources\colonization.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
